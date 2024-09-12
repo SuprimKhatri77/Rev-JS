@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif">SU PR IM KH AT RI</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    <script>
+      const newDate = () => {
+        console.log("hello", Date.now());
+      };
+      let intervalId;
+      const buttons = document.querySelectorAll("button");
+      //   console.log(buttons);
+      buttons.forEach((item) => {
+        // console.log(item);
+        if (item.innerHTML === "Start") {
+          const startBtn = document.querySelector("#start");
+          startBtn.addEventListener("click", () => {
+            intervalId = setInterval(newDate, 2000);
+          });
+        } else if (item.innerHTML === "Stop") {
+          const stopBtn = document.querySelector("#stop");
+          stopBtn.addEventListener("click", () => {
+            clearInterval(intervalId);
+            intervalId = null;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
