@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,4 +33,40 @@
     
     
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    const child = document.querySelectorAll('.day');
+    console.log(child);
+
+    child.forEach( (items)=> {
+        items.style.color = 'red';
+    } )
+    
+    
+</script>
+>>>>>>> 4ec0ac2 (first commit)
 </html>

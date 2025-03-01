@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif">SU PR IM KH AT RI</h1>
+    <button id="stop">Stop</button>
+    <script>
+      //   setTimeout(() => {
+      //     console.log("Tribal Chief");
+      //   }, 2000);
+
+      //   setInterval(() => {
+      //     console.log("The Bloodline");
+      //   }, 10);
+      const changeText = setTimeout(() => {
+        document.querySelector("h1").innerHTML = "Tribal Chief";
+      }, 3000);
+
+      const buttonElement = document.querySelector("button");
+      buttonElement.addEventListener("click", () => {
+        clearTimeout(changeText);
+        console.log("changed");
+      });
+    </script>
+  </body>
+</html>

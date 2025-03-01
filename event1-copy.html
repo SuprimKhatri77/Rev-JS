@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -104,3 +105,111 @@
     </script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+    </style>
+  </head>
+  <body>
+    <ul id="images">
+      <li id="removeImg">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1666900049787-efeaa0af1796?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+          alt="flower"
+          id="flower"
+          width="=100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <img
+          src="https://images.unsplash.com/photo-1674407729043-c21b71fded37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+          alt="mountain"
+          id="mountain"
+          width="100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <img
+          src="https://images.unsplash.com/photo-1567788150222-c580695fa1d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+          alt="beach"
+          id="beach"
+          width="=100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <img
+          src="https://images.unsplash.com/photo-1725714355895-2f2cd140787b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+          alt="ocean"
+          id="ocean"
+          width="=100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <img
+          src="https://images.unsplash.com/photo-1719430792808-bf4ec5feb363?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+          alt="hills"
+          id="hills"
+          width="=100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <img
+          src="https://images.unsplash.com/photo-1678621360122-2c3a2de8d89a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDc4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+          alt="snow"
+          id="snow"
+          width="=100px"
+          height="100px"
+        />
+      </li>
+      <li id="removeImg">
+        <a href="https://google.com/" id="google">Google</a>
+      </li>
+    </ul>
+    slash is goated
+    <script>
+      // const hills = document.querySelector("#hills");
+      // hills.addEventListener("click", (e) => {
+      //   alert("Siiiiuuuuuuu");
+      // });
+
+      const google = document.getElementById("google");
+      google.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+      const ul = document.querySelector("#images");
+      ul.addEventListener("click", (e) => {
+        console.log(e.target.tagName);
+
+        if (e.target.tagName === "IMG" || e.target.tagName === "A") {
+          console.log(e.target.id);
+
+          e.target.parentNode.remove();
+        }
+      });
+
+      //   const li = document.querySelectorAll("#removeImg");
+
+      //   li.forEach((item) => {
+      //     item.addEventListener("click", (event) => {
+      //       event.target.parentElement.style.display = "none";
+      //     });
+      //   });
+    </script>
+  </body>
+</html>
+>>>>>>> 4ec0ac2 (first commit)
