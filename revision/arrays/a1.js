@@ -3,6 +3,9 @@
 const myArr = [0,1,2,3,4,5]
 //  console.log(myArr[1])
 
+
+
+
 const heroes = ["Iron Man","Spiderman","Captain America","Dr. Strange","Black widow"]
 // console.log(heroes[0])
 
@@ -50,18 +53,18 @@ myArr.shift()
 
 
 // Slice
-console.log("A ", myArr)
+// console.log("A ", myArr)
 
 const myn1 = myArr.slice(1,3)
-console.log(myn1);
-console.log("B ", myArr);
+// console.log(myn1);
+// console.log("B ", myArr);
 
 
 
 // Splice
 const myn2 = myArr.splice(1,3)
-console.log(myn2);
-console.log("C ", myArr);
+// console.log(myn2);
+// console.log("C ", myArr);
 
 
 
