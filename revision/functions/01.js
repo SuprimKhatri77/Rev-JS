@@ -26,5 +26,32 @@ function loginUserMessage(username){
     return `Hello, ${username}!`
     }
 }
-console.log(loginUserMessage('slashyyy'));
+// console.log(loginUserMessage('slashyyy'));
 
+
+
+function calculateCartPrice(...price){
+    return price
+    
+}
+
+// console.log(calculateCartPrice(2,5,6,7,8,9))
+
+
+const user = {
+    username: 'Slash',
+    isActive: true
+}
+
+function handleObject(anyobject){
+    return `Username is ${anyobject.username}, isActive: ${anyobject.isActive}`
+}
+// console.log(handleObject(user))
+
+
+const myArr  = [100,200,300,400]
+
+function returnArrayValue(getArray){
+    return getArray[1]
+}
+console.log(returnArrayValue(myArr))
