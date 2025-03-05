@@ -15,7 +15,7 @@ const nestedObj = {
 // accessing the value inside of an nested object
 // console.log(nestedObj.userDetail.fullname.lastName);
 
-// accessing the value inside of an nested obj using sqaure notation
+// accessing the value inside of an nested obj using square notation
 // console.log(nestedObj["userDetail"]["fullname"]["firstName"]);
 
 
@@ -55,4 +55,19 @@ const myArr = [
 
 // console.log(myArr[0].email);
 
+
+
+
+// object destructring
+
+const course = {
+    courseName: 'JavaScript',
+    price: 999,
+    courseInstructor: 'Suprim'
+}
+
+
+const {courseInstructor: instructor} = course
+// console.log(courseInstructor);
+console.log(instructor);
 
