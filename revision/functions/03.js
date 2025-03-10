@@ -21,5 +21,5 @@ const arrowFunction = ()=>{
 
 // implicit return
 
-const func = (num1,num2) => (num1+num2)
+const func = (num1,num2) => num1+num2
 console.log(func(5,2))
