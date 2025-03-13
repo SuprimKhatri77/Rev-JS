@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background: #212121;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">THursday</div>
+    </div>
+</body>
+<script>
+    const parentElement = document.querySelector('.parent')
+    // console.log(parentElement);
+    // console.log(parentElement.children[0].innerText);
+
+    for (let i = 0; i < parentElement.children.length; i++) {
+        const element = parentElement.children[i].innerText;
+        // console.log(element);
+    }
+
+    // console.log(parentElement.firstElementChild.innerText);
+
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne.parentElement.innerHTML);
+    // console.log(dayOne.nextElementSibling.innerText);
+    
+    // console.log("Nodes:", parentElement.childNodes);
+    
+    
+    
+    
+</script>
+</html>
