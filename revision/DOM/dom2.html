@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Element using DOM</title>
+    <style>
+        .bg-black{
+            background: #212121;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 24px;
+        }
+        .dynamic-element{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addNewLanguage(element,langNAme){
+        const parentELement = document.querySelector('.language');
+        const newLi = document.createElement(element);
+        newLi.innerText = `${langNAme}`;
+        parentELement.appendChild(newLi)
+    }
+        addNewLanguage('li','Python');
+        addNewLanguage('li','Ruby on Rails');
+        addNewLanguage('li', 'TypeScript');
+        addNewLanguage('li', 'Golang');
+
+    // edit
+    const secondLang = document.querySelector('li:nth-child(2)');
+    // secondLang.innerText = 'Mojo'
+
+    const newLI = document.createElement('li');
+    newLI.textContent = 'Jojo'
+    secondLang.replaceWith(newLI)
+
+    // remove
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove()
+</script>
+</html>
